@@ -1,0 +1,21 @@
+{
+    "name": "seasofthpyosithu/gmo-payment",
+    "description": "gmo payment library laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Si Thu Hpyo",
+            "email": "sandaraion@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Seasofthpyosithu\\GmoPayment\\": "src/"
+        }
+    }
+}
