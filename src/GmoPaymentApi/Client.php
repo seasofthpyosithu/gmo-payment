@@ -133,6 +133,9 @@ class Client{
             throw new GmoPaymentException("api doesn't not exist", 0, null, '');
         }
         try {
+            $headers = array_merge([
+                'Content-Type' => 'application/x-www-form-urlencoded;charset=Shift_JIS',
+            ], $headers);
             $response = $this->client->post($this->api[$func], [
                 'form_params' => $params,
                 'headers' => $headers,
